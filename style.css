@@ -21,7 +21,7 @@ body{
 }
 .wrapper{
   width: 430px;
-  background: rgb(238, 186, 186);
+  background: rgb(238 186 186 / 81%);
   border-radius: 10px;
   box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
   -webkit-box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
