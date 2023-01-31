@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://www.hitbullseye.com/images/school.svg); 
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 197px;
+}
+.wrapper{
+  width: 430px;
+  background: rgb(238, 186, 186);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
+  -webkit-box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
+  -moz-box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
+}
+.wrapper h1{
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #2b121200;
+}
+.wrapper .content{
+  margin: 25px 25px 35px;
+}
+.content .inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs input{
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2b12124b;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #2b12124b;
+}
+.typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+.inputs input:first-child{
+  margin-left: 0px;
+}
+.content .details{
+  margin: 20px 0 25px;
+}
+.details p{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.content .reset-btn{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #b96354;
+  transition: all 0.3s ease;
+}
+.content .reset-btn:hover{
+  background: #e01212;
+
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
+  -webkit-box-shadow: 5px 5px 10px 1px rgba(255,89,89,0.75);
+  -moz-box-shadow: 10px 10px 20px 2px rgba(255,89,89,0.75);
+}
+@media screen and (max-width: 460px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper h1{
+    font-size: 22px;
+    padding: 16px 20px;
+  }
+  .wrapper .content{
+    margin: 25px 20px 35px;
+  }
+  .inputs input{
+    height: 51px;
+    width: 50px;
+    margin: 3px;
+    font-size: 22px;
+  }
+  .details p{
+    font-size: 17px;
+  }
+  .content .reset-btn{
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
